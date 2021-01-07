@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_dbaeb2223c0a4dd59c17dac5ae9732c6 {
+                #map_6b4dd859758c44c1bb5d08b24950523f {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,17 +35,17 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_dbaeb2223c0a4dd59c17dac5ae9732c6" ></div>
+            <div class="folium-map" id="map_6b4dd859758c44c1bb5d08b24950523f" ></div>
         
 </body>
 <script>    
     
-            var map_dbaeb2223c0a4dd59c17dac5ae9732c6 = L.map(
-                "map_dbaeb2223c0a4dd59c17dac5ae9732c6",
+            var map_6b4dd859758c44c1bb5d08b24950523f = L.map(
+                "map_6b4dd859758c44c1bb5d08b24950523f",
                 {
                     center: [38.63, -90.2],
                     crs: L.CRS.EPSG3857,
-                    zoom: 10,
+                    zoom: 6,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -55,9 +55,39 @@
 
         
     
-            var tile_layer_bbbfaa952c464a3ebac2e4c20b50e7f6 = L.tileLayer(
-                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_dbaeb2223c0a4dd59c17dac5ae9732c6);
+            var tile_layer_deb9465e13994fd9b0023a47c5f8a6b8 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6b4dd859758c44c1bb5d08b24950523f);
         
+    
+            var feature_group_262413527b094c8aad95d4fd17dc4c02 = L.featureGroup(
+                {}
+            ).addTo(map_6b4dd859758c44c1bb5d08b24950523f);
+        
+    
+            var marker_1efd9d1344f8466bba4bcbf074dcab65 = L.marker(
+                [33.75, -84.38],
+                {}
+            ).addTo(feature_group_262413527b094c8aad95d4fd17dc4c02);
+        
+    
+            var icon_b48e6565028f49afa01670ac4425cfa8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1efd9d1344f8466bba4bcbf074dcab65.setIcon(icon_b48e6565028f49afa01670ac4425cfa8);
+        
+    
+        var popup_22e707cd20be4e1c8e666468c88b3589 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc4e9659350246fea12e24e1ff7caa30 = $(`<div id="html_dc4e9659350246fea12e24e1ff7caa30" style="width: 100.0%; height: 100.0%;">I created this marker</div>`)[0];
+            popup_22e707cd20be4e1c8e666468c88b3589.setContent(html_dc4e9659350246fea12e24e1ff7caa30);
+        
+
+        marker_1efd9d1344f8466bba4bcbf074dcab65.bindPopup(popup_22e707cd20be4e1c8e666468c88b3589)
+        ;
+
+        
+    
 </script>
